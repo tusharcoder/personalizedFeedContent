@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "baacb926-a61b-4403-a1ea-10e8aa9ba719",
+		"name": "APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{base_url}}/logVisit/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"item_id\":1,\n\t\"user_id\":1\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/logVisit/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"logVisit",
+						""
+					]
+				},
+				"description": "API to log the visit of the user to the content"
+			},
+			"response": []
+		},
+		{
+			"name": "{{base_url}}/contentFeed/1/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url}}/contentFeed/1/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"contentFeed",
+						"1",
+						""
+					]
+				},
+				"description": "API to get the content Feed, user id is passed in the GET API"
+			},
+			"response": []
+		}
+	]
+}
